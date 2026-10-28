@@ -13,3 +13,7 @@ def list_folder():
 
 # shortcuts
 shortcuts = {'<ctrl>+<alt>+m' : show_message, '<ctrl>+<alt>+s' : list_folder}
+
+
+with keyboard.GlobalHotKeys(shortcuts) as listener :
+    listener.join()
