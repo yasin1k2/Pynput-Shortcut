@@ -10,9 +10,13 @@ def show_message():
 def list_folder():
     os.startfile(".")
 
+def quit_app():
+    print("Exiting program...")
+    listener.stop()
+
 
 # shortcuts
-shortcuts = {'<ctrl>+<alt>+m' : show_message, '<ctrl>+<alt>+s' : list_folder}
+shortcuts = {'<ctrl>+<alt>+m' : show_message, '<ctrl>+<alt>+s' : list_folder, '<ctrl>+s' : quit_app}
 
 
 with keyboard.GlobalHotKeys(shortcuts) as listener :
