@@ -16,7 +16,7 @@ def quit_app():
 
 
 # shortcuts
-shortcuts = {'<ctrl>+<alt>+m' : show_message, '<ctrl>+<alt>+s' : list_folder, '<ctrl>+s' : quit_app}
+shortcuts = {'<esc>+1+s' : show_message, '<esc>+2+s' : list_folder, '<esc>+3+s' : quit_app}
 
 
 with keyboard.GlobalHotKeys(shortcuts) as listener :
