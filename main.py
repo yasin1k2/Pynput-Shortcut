@@ -1,5 +1,5 @@
 # imports and global variables
-import pynput
+from pynput import keyboard
 import os
 
 
@@ -10,3 +10,6 @@ def show_message():
 def list_folder():
     os.startfile(".")
 
+
+# shortcuts
+shortcuts = {'<ctrl>+<alt>+m' : show_message, '<ctrl>+<alt>+s' : list_folder}
